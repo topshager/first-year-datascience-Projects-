@@ -1,7 +1,7 @@
 import pandas as pd
 
 #loading dataset
-data = pd.read_csv('/Users/joshuasingrew/Desktop/Data scince project /dataset_1.csv')
+data = pd.read_csv('#CSV location file path')
 
 average_Hours = {}
 average_hours_frequecy = data['Average hours spent studying on campus'].value_counts().sort_index()
@@ -19,15 +19,15 @@ for count in average_hours_frequecy:
         average_Hours['4-5'] = count + count
     elif i == 5:
         average_Hours['4-5'] =  count + count
-        
+
     i += 1  # Increment index for the next iteration
 
 print("\nFrequency Table for Average Hours Spent Studying on Campus:")
 for key, value in average_Hours.items():
     print("------------------","\n|"+f"{key}" +"      |   "+ f"{value}"+" |","\n------------------")
 
-        
-#18 – 25, 25 – 35, 35 – 45, over 45 
+
+#18 – 25, 25 – 35, 35 – 45, over 45
 print("\n")
 
 age_groups = {'18-25': 0, '25-35': 0, '35-45': 0, 'over 45': 0}
@@ -70,4 +70,3 @@ for time in data['Time taken on examination (minutes)']:
 print("Frequency Table for Time taken on examination (minutes):")
 for group, count in groupings.items():
     print("------------------"+"\n",f"{group}    :   {count}")
-

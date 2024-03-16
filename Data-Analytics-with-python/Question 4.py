@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # 4.1
 # a. Read the percent-bachelors-degrees-women-usa.csv file as a list of lists.
-with open("/Users/joshuasingrew/Library/Mobile Documents/com~apple~CloudDocs/data science /percent-bachelors-degrees-women-usa.csv", "r") as file:
+with open("#CSV location file path", "r") as file:
     BDW = list(csv.reader(file))
 
 # b. Assign the result to the variable BDW.

@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the dataset
-data = pd.read_csv('/Users/joshuasingrew/Desktop/Data scince project /dataset_1.csv')
+data = pd.read_csv('#CSV location file path')
 
 # Define study groupings
 study_groups = {

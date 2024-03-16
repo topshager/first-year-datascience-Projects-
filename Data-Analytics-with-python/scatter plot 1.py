@@ -1,9 +1,9 @@
-iimport pandas as pd
+import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load both datasets
-data1 = pd.read_csv('/Users/joshuasingrew/Desktop/Data scince project /dataset_1.csv')
-data2 = pd.read_csv('/Users/joshuasingrew/Desktop/Data scince project /dataset_2.csv')
+data1 = pd.read_csv('#CSV location file path dataset 1')
+data2 = pd.read_csv('#CSV location file path dataset 2')
 
 # Rename columns if necessary to ensure consistency
 # For example, if 'Student mark achieved' in dataset 1 is called 'Marks' in dataset 2, you should rename it
